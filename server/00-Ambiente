@@ -1,0 +1,21 @@
+# Preparação do Ambiente de Hospedagem
+
+O movimento self-hosted é democrático: você não precisa gastar milhares de reais em um servidor empresarial para começar. Esta arquitetura foi desenhada para funcionar de forma leve e modular em praticamente qualquer hardware.
+
+## Opções de Hardware
+
+1. **Computador/Notebook Antigo:** Excelente para começar. Notebooks antigos têm uma vantagem fantástica: a bateria interna funciona como um Nobreak (UPS) natural caso falte energia na sua casa.
+2. **Raspberry Pi / Single Board Computers (SBCs):** Consumo de energia extremamente baixo (perfeito para ficar ligado 24/7). Recomenda-se o uso de SSDs externos em vez de cartões MicroSD para evitar corrupção de dados.
+3. **Máquinas Virtuais (VMs):** Se você quer apenas testar antes de dedicar um hardware físico, use Proxmox, VirtualBox ou VMware.
+4. **Mini PCs:** Hardwares com processador e memórias RAM/ROM integrados, oferecendo um excelente custo-benefício e baixo consumo.
+5. **Celular:** É possível via Termux ou alterando o Bootloader. Não recomendo a troca do Bootloader pois você vai remover completamente o Android do aparelho. Embora o desempenho para Linux fique muito bom, você perde a garantia e invalida o smartphone para qualquer outra função na sua vida. Só siga por esse caminho se for um aparelho dedicado exclusivamente a isso para sempre.
+
+## Requisitos Mínimos Recomendados
+
+Os requisitos dependem muito do que você irá rodar no seu servidor. O ecossistema atual deste projeto foi montado pensando em serviços muito úteis para o dia a dia da comunidade, misturando aplicações leves e algumas ferramentas mais pesadas (como o Mailcow ou o Chatwoot).
+
+* **Servidor Simples (Para iniciar):** 4 Cores de CPU / 8GB RAM / 256GB SSD.
+* **Servidor Robusto (Para rodar o ecossistema completo):** 8 a 12 Cores de CPU / 16GB RAM / 1TB SSD. *(Essa configuração garante estabilidade para dezenas de serviços rodando 24/7 de forma síncrona e com múltiplos acessos na rede).*
+
+---
+➡️ [Voltar para o menu principal](../README.md) | ➡️ [Ir para o Passo 01: Instalação do Debian](./01-Debian.md)
